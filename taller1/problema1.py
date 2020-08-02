@@ -34,6 +34,17 @@ z = v0 * t
 # se grafica la curva parametrica
 ax.plot(x, y, z, '-k')
 
+# CAPTIONS DE LOS EJES
+ax.set_xlabel('x(t)')
+ax.set_ylabel('y(t)')
+ax.set_zlabel('z(t)')
+ax.set_title('Problema 1')
+
+# NUMERACION DE LOS EJES
+ax.set_xticks([0])
+ax.set_yticks([0])
+ax.set_zticks([0])
+
 # mantiene los ejes fijos, sin ajustarse automáticamente
 #ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 ax.set_zlim(-20,20)

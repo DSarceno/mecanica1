@@ -22,7 +22,7 @@ def system(t, y):
     f = [y1,
         q*(E0*np.sin(((q*B0)/(m*c))*t) + y2*B0),
         y2,
-        -(B0/m)*y1]
+        -(q*B0/m)*y1]
     return f
 # condiciones iniciales
 x1 = 0
